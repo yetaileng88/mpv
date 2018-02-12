@@ -2,7 +2,7 @@ language: c
 
 os:
   - linux
-  #- osx
+  - osx
 env:
   matrix:
     - LIBAV=ffmpeg-git
@@ -26,8 +26,6 @@ matrix:
   exclude:
     - os: osx
       env: LIBAV=libav-git
-    - os: osx
-      env: LIBAV=ffmpeg-git
     - os: osx
       compiler: gcc
     - os: linux
